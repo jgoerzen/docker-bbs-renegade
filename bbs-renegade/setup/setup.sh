@@ -14,3 +14,6 @@ echo "share" >>$DBCONF
 echo "renegade.exe /N__NODE__ -Q" >>$DBCONF
 echo "exit" >>$DBCONF
 
+# Disable the DOSBOX console auto start
+rm /etc/supervisor/conf.d/dosbox.conf
+
