@@ -9,7 +9,7 @@ MAINTAINER John Goerzen <jgoerzen@complete.org>
 
 COPY setup/ /tmp/setup/
 RUN /tmp/setup/download.sh
-
+RUN /tmp/setup/setup.sh
 
 EXPOSE 5901 23
 CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf"]
