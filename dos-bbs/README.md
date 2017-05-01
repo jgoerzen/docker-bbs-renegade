@@ -82,6 +82,13 @@ for DOSBOX.
 
 Alt-X exits Telemate, and Ctrl-F10 un-captures the mouse from the DOSBox window.
 
+# Notes on 8-bit cleanliness
+
+Different BBS systems run in "raw" mode, or inside the telnet protocol.
+Generally, images under here will run "raw".  When you connect remotely,
+if you have troubles with file transfers, try different permutations of
+ATNET0 and ATNET1.
+
 # Source
 
 This is prepared by John Goerzen <jgoerzen@complete.org> and the source
