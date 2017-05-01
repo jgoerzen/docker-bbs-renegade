@@ -9,6 +9,7 @@ RUN sed -i 's/main/main contrib/g' /etc/apt/sources.list && \
             supervisor dosemu zip unzip pwgen xdotool telnet mtools nano && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 COPY startvnc /usr/local/bin
+COPY dosboxconsole /usr/local/bin
 COPY supervisor/ /etc/supervisor/conf.d/
 COPY setup.sh /
 RUN /setup.sh
