@@ -32,7 +32,7 @@ unzip -o -L /tmp/setup/doors/lord407-patch.zip
 
 echo "y:" >> /dos/dosbox.conf
 echo "cd \\adf" >> /dos/dosbox.conf
-echo "adf.exe COM1 3F8 4 115200 8192 8192 8" >> /dos/dosbox.conf
+echo "adfcom1" >> /dos/dosbox.conf
 
 # We don't need to waste CPU generating every frame.
 sed -i 's/frameskip=0/frameskip=100/' /dos/dosbox.conf
