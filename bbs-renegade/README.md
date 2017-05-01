@@ -16,3 +16,8 @@ Info and sources:
  - [Renegade in Ubuntu](http://www.instructables.com/id/Renegade-BBS-in-Ubuntu-Linux-Telnet-Multi-Node/)
  - [Another Renegade site](http://www.redditmirror.cc/cache/websites/geek.phatus.com_9stap/geek.phatus.com/2009/08/renegade-bbs-in-ubuntu-linux-telnetmulti-node/index.html)
 
+Create like this:
+
+ - docker pull jgoerzen/bbs-renegade
+ - docker run -d -p 23:23 -p 5901:5901 --name renegade jgoerzen/bbs-renegade
+
