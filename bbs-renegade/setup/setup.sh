@@ -20,7 +20,7 @@ DBCONF="/dos/dosbox-telnetbbs-template.conf"
 echo "C:" >>$DBCONF
 echo "cd rg" >>$DBCONF
 echo "share" >>$DBCONF
-echo "renegade.exe /N__NODE__ -Q" >>$DBCONF
+echo "renegade.exe /N__NODE__ -Q -B57600" >>$DBCONF
 echo "exit" >>$DBCONF
 
 sed -i 's/nodes = 3/nodes = 9/' /dos/TelnetBBS-master/telnetbbs.conf
