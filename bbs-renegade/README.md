@@ -5,8 +5,8 @@ This image runs a telnettable Renegade BBS inside Docker.
 It is based upon:
 
  - [My DOSBox environment for Docker](https://github.com/jgoerzen/docker-bbs/tree/master/dosbox)
- - [Multi-node telnet BBS setup](https://github.com/Geryon/TelnetBBS)
  - [My general BBS template](https://github.com/jgoerzen/docker-bbs/tree/master/dos-bbs)
+ - [Multi-node telnet BBS setup](https://github.com/Geryon/TelnetBBS)
 
 This provides the full v1.20 setup in Drive C:.
 
@@ -20,4 +20,8 @@ Create like this:
 
  - docker pull jgoerzen/bbs-renegade
  - docker run -d -p 23:23 -p 5901:5901 --name renegade jgoerzen/bbs-renegade
+
+# More Resources
+
+ - [Renegade Documentation](http://renegadebbs.info/docs/)
 
