@@ -14,7 +14,7 @@ and FreeDOS commands are both on the system's PATH.
 The environment variable VNCPASSWORD can set the password for the VNC console
 (maximum 8 characters, a limitation of tightvncserver).  If you do not set
 one, a random password will be assigned on each start of the container, and
-logged in the docker logs.
+logged in the docker logs.  VNC is exposed on port 5901.
 
 This is prepared by John Goerzen <jgoerzen@complete.org> and the source
 can be found at https://github.com/jgoerzen/docker-bbs/tree/master/dosbox
