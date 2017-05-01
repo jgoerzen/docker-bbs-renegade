@@ -100,4 +100,5 @@ can be found at https://github.com/jgoerzen/docker-bbs/tree/master/dos-bbs
  - [Telemate v4.2x under DOSBox Tutorial](http://www.starbase21.net/telemate.html)
  - [Reddit: Using DosBox to Dial into Telnet boards](https://www.reddit.com/r/retrobattlestations/comments/5o5edj/using_dosbox_to_dial_into_telnet_boards/)
  - [Configuring DOSBox to allow inbound and outbound telnet connections](https://www.megaplonk.com/wiki/doku.php?id=emulation_and_virtualization:configuring_dosbox_to_allow_inbound_and_outbound_telnet_connections_as_if_dial-up_modem_calls)
+ - [DOS BBS files](http://archives.thebbs.org/)
 
