@@ -6,6 +6,7 @@ set -x
 cd /tmp/setup
 wget https://ftp.sunet.se/mirror/archive/ftp.sunet.se/pub/simtelnet/msdos/fossil/adf_150.zip
 wget https://github.com/Geryon/TelnetBBS/archive/master.zip
+wget http://www.starbase21.net/tm421.zip
 
 sha256sum -c < sums
 

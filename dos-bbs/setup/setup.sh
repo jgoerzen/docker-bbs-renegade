@@ -6,10 +6,16 @@ set -x
 cd /dos
 unzip /tmp/setup/master.zip
 
-cd /dos/drive_d
+cd /dos/drive_y
 mkdir adf
 cd adf
 unzip /tmp/setup/adf_150.zip
+
+cd /dos/drive_d
+mkdir comm
+cd comm
+unzip /tmp/setup/tm421.zip
+mv tm421 tm
 
 cd /dos/drive_d
 mkdir doors
@@ -24,7 +30,7 @@ unzip -L /tmp/setup/doors/lord407.zip
 unzip -L lord.zip
 unzip -o -L /tmp/setup/doors/lord407-patch.zip
 
-echo "d:" >> /dos/dosbox.conf
+echo "y:" >> /dos/dosbox.conf
 echo "cd \\adf" >> /dos/dosbox.conf
 echo "adf.exe COM1 3F8 4 115200 8192 8192 8" >> /dos/dosbox.conf
 
