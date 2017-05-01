@@ -23,3 +23,6 @@ You can install with:
 
 docker pull jgoerzen/dosbox
 
+This image uses supervisor; please see the supervisor/ directory for
+examples.  Adding your own processes is very simple.
+

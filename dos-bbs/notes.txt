@@ -8,3 +8,7 @@ http://www.bbsing.com/bbsfossil/bbsfossil.html
 http://archives.scovetta.com/pub/fehq/BBSDoorGames/00_index.htm
 http://www.slbbs.com/files/doorgame.html
 
+# Door info
+https://github.com/NuSkooler/enigma-bbs/blob/master/docs/doors.md
+http://wiki.synchro.net/howto:door:index
+

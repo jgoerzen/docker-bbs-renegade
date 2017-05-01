@@ -38,3 +38,11 @@ sed -i 's/nosound=false/nosound=true' /dos/dosbox.conf
 sed 's/serial1=dummy/serial1=modem listenport:__LISTEN_PORT__/' \
   < /dos/dosbox.conf > /dos/dosbox-telnetbbs-template.conf
 
+# Set up the TelnetBBS config.
+
+sed -i -e 's/port = 3023/port = 23/' \
+    -e 's/base_port = 3024/base_port = 7001/' \
+    -e 's/display = :0.0/display = :1/' \
+    -e 's,dosboxt = dosbox.conf.template,dosboxt = /dos/dosbox-telnetbbs-template.conf,'  \
+    /dos/TelnetBBS-master/telnetbbs.conf
+
