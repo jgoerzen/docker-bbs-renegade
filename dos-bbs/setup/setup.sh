@@ -78,6 +78,4 @@ sed -i -e 's/port = 3023/port = 23/' \
 # Set up the DOSBox modem.
 sed -i 's/serial1=dummy/serial1=modem listenport:5000/' /dos/dosbox.conf
 
-# Don't start DosBOX by default.
-rm /etc/supervisor/conf.d/dosbox.conf
 
