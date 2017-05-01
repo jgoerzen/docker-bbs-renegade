@@ -5,6 +5,15 @@ set -x
 
 cd /dos/drive_c
 unzip /tmp/setup/unofficial.rgbbsfullv120a.zip
+cd rg/DATA
+
+# Configure the modem with ATNET1 instead of ATZ,
+# plus set up all 9 nodes.
+cp /tmp/setup/NODE1.DAT .
+for ASDF in 2 3 4 5 6 7 8 9; do
+  cp NODE1.DAT NODE$ASDF.DAT
+done
+cp /tmp/setup/MULTNODE.DAT .
 
 cd /dos
 DBCONF="/dos/dosbox-telnetbbs-template.conf"
