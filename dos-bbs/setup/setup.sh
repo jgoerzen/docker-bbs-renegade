@@ -44,6 +44,9 @@ echo "adfcom1" >> /dos/dosbox.conf
 # Disable sound.
 sed -i 's/nosound=false/nosound=true/' /dos/dosbox.conf
 
+# Max speed
+sed -i 's/cycles=auto/cycles=max/' /dos/dosbox.conf
+
 # Generate the telnetbbs base.
 sed -e 's/serial1=dummy/serial1=modem listenport:__LISTEN_PORT__/' \
     -e 's/frameskip=0/frameskip=30/' \
