@@ -9,9 +9,7 @@ RUN sed -i 's/main/main contrib/g' /etc/apt/sources.list && \
             supervisor dosemu zip unzip pwgen && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 COPY startvnc /usr/local/bin
-COPY supervisord_jgoerzen.conf /etc/supervisor/conf.d/supervisord_jgoerzen.conf
-COPY vncserver.conf /etc/supervisor/conf.d/vncserver.conf
-COPY dosbox.conf /etc/supervisor/conf.d/dosbox.conf
+COPY supervisor/ /etc/supervisor/conf.d/
 COPY setup.sh /
 RUN /setup.sh
 
