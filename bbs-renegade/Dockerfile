@@ -11,6 +11,7 @@ COPY setup/ /tmp/setup/
 RUN /tmp/setup/download.sh
 RUN /tmp/setup/setup.sh && rm -r /tmp/setup
 
+VOLUME ["/dos/drive_c", "/dos/drive_d"]
 EXPOSE 5901 23
 CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf"]
 
