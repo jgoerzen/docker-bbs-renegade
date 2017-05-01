@@ -26,6 +26,12 @@ and FreeDOS commands are both on the system's PATH.
 `Y:\SCRIPTS` is also created and put on the PATH, though empty by default;
 it is a place where you can add scripts and such that run later.
 
+Child images may, but are not required to, follow this convention:
+
+ - Drive C for the main application (probably a volume, since many write to their CWD)
+ - Drive D for helper applications (perhaps also a volume, since many write to their CWD)
+ - Drive Y for static utilities/scripts, that would not need to be a volume.
+
 This image uses supervisor; please see the supervisor/ directory for
 examples.  Adding your own processes is very simple.
 
