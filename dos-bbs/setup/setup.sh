@@ -54,7 +54,7 @@ unzip -o -L /tmp/setup/doors/lord407-patch.zip
 # Load up FOSSIL
 echo "y:" >> /dos/dosbox.conf
 echo "cd \\adf" >> /dos/dosbox.conf
-echo "adfcom1" >> /dos/dosbox.conf
+echo "call adfcom1" >> /dos/dosbox.conf
 
 # Disable sound.
 sed -i 's/nosound=false/nosound=true/' /dos/dosbox.conf
