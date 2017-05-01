@@ -28,26 +28,31 @@ Please see that page for details on DOS and the underlying configuration.
 
 Renegade itself is installed in `C:\RG`.
 
+See the jgoerzen/dos-bbs documentation for more.
 
+# VNC console and telnet ports
+
+The jgoerzen/dos-bbs will describe this.  Please refer to it.
+
+If you want to manually run the Renegade system, first type `dosboxconsole` in the xterm.
+Now, inside DOSBox:
+
+    c:
+    cd rg
+    share
+    renegade -N1
+
+You can then configure the system as needed.
 
 # More Information
 
  - [Renegade homepage](http://www.renegadebbs.info/)
  - [Renegade in Ubuntu](http://www.instructables.com/id/Renegade-BBS-in-Ubuntu-Linux-Telnet-Multi-Node/)
  - [Another Renegade site](http://www.redditmirror.cc/cache/websites/geek.phatus.com_9stap/geek.phatus.com/2009/08/renegade-bbs-in-ubuntu-linux-telnetmulti-node/index.html)
-
-Create like this:
-
- - docker pull jgoerzen/bbs-renegade
- - docker run -d -p 23:23 -p 5901:5901 --name renegade jgoerzen/bbs-renegade
-
-# More Resources
-
  - [Renegade Documentation](http://renegadebbs.info/docs/)
 
 # Source
 
 This is prepared by John Goerzen <jgoerzen@complete.org> and the source
 can be found at https://github.com/jgoerzen/docker-bbs/tree/master/bbs-renegade
-
 
