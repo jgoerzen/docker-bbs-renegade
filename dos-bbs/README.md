@@ -48,6 +48,10 @@ an xterm (white) and a DOSBox terminal (black) running here, though
 child images may alter these defaults.  If you do not see a DOSBox terminal,
 then the command `dosboxconsole` should get one for you.
 
+Don't worry if the TelnetBBS consoles feel sluggish; DOSBox is set to
+frameskip=30 on them to help reduce wasted CPU cycles.  The dosboxconsole
+doesn't do any frameskip, however.
+
 # Telnet ports
 
 Telnet is exposed on port 23, and runs the TelnetBBS system.
