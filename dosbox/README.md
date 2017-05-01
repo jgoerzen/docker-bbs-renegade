@@ -23,6 +23,9 @@ for drives C: through H: and Y:.  This image will install FreeDOS commands
 into `Y:\DOS` (pulled from dosemu, as it happens) and make sure that the DOSBox
 and FreeDOS commands are both on the system's PATH.
 
+`Y:\SCRIPTS` is also created and put on the PATH, though empty by default;
+it is a place where you can add scripts and such that run later.
+
 This image uses supervisor; please see the supervisor/ directory for
 examples.  Adding your own processes is very simple.
 
