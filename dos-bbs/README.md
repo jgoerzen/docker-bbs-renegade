@@ -67,10 +67,16 @@ example of what to type to get started:
 
 This starts Telemate.  Now, close the blue phonebook with Esc and type:
 
+    ATNET1
     ATDTbbs.starbase21.net
 
 This will begin a Telnet session with DOSBox's simulated modem.  Note also
 that you can add a port number with :port at the end (eg, `ATDTbbs.starbase21.net:23`).
+
+The ATNET1 puts DOSBox into proper telnet mode.  Note that these commands are case-sensitive
+for DOSBOX.
+
+Alt-X exits Telemate, and Ctrl-F10 un-captures the mouse from the DOSBox window.
 
 # Source
 
