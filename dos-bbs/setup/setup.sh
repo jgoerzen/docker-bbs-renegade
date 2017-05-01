@@ -21,8 +21,8 @@ unzip /tmp/setup/tm421.zip
 mv tm421 TM
 cd TM
 sed -i 's/Baud=38400/Baud=57600/' TM.CFG
-sed -i 's/RegNo="[UNREGISTERED]"/RegNo="TM00F1C0129"/' TM.CFG
-sed -i 's/RegName="[UNREGISTERED]"/RegName="Nobody"/' TM.CFG
+sed -i 's/RegNo=.*/RegNo="TM00F1C0129"/' TM.CFG
+sed -i 's/RegName=.*/RegName="Nobody"/' TM.CFG
 mv -vi /tmp/setup/TM.FON .
 
 # Set up Telix
