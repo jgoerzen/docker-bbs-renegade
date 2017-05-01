@@ -23,6 +23,8 @@ echo "share" >>$DBCONF
 echo "renegade.exe /N__NODE__ -Q" >>$DBCONF
 echo "exit" >>$DBCONF
 
+sed -i 's/nodes = 3/nodes = 9/' /dos/TelnetBBS-master/telnetbbs.conf
+
 # Disable the DOSBOX console auto start
 rm /etc/supervisor/conf.d/dosbox.conf
 
