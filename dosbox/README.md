@@ -8,7 +8,7 @@ port 5901.
 Under /dos, you will find dosbox.conf (the config file), to which you
 can easily append autoexec statements.  Also, there are subdirectories
 for drives C: through G: and Y:.  This image will install FreeDOS commands
-into Y:\ (pulled from dosemu, as it happens) and make sure that the DOSBox
+into Y:\DOS (pulled from dosemu, as it happens) and make sure that the DOSBox
 and FreeDOS commands are both on the system's PATH.
 
 The environment variable VNCPASSWORD can set the password for the VNC console
