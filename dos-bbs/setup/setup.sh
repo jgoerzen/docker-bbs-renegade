@@ -3,20 +3,26 @@
 set -e
 set -x
 
+# Unpack TelnetBBS
 cd /dos
 unzip /tmp/setup/master.zip
 
+# Unpack ADF (FOSSIL)
 cd /dos/drive_y
 mkdir adf
 cd adf
 unzip /tmp/setup/adf_150.zip
 
+# Set up Telemate
 cd /dos/drive_d
 mkdir comm
 cd comm
 unzip /tmp/setup/tm421.zip
 mv tm421 tm
+cd tm
+sed -i 's/Baud=38400/Baud=57600/' TM.CFG
 
+# Download doors
 cd /dos/drive_d
 mkdir doors
 cd doors
@@ -30,6 +36,7 @@ unzip -L /tmp/setup/doors/lord407.zip
 unzip -L lord.zip
 unzip -o -L /tmp/setup/doors/lord407-patch.zip
 
+# Load up FOSSIL
 echo "y:" >> /dos/dosbox.conf
 echo "cd \\adf" >> /dos/dosbox.conf
 echo "adfcom1" >> /dos/dosbox.conf
@@ -49,6 +56,9 @@ sed -i -e 's/port = 3023/port = 23/' \
     -e 's/display = :0.0/display = :1/' \
     -e 's,dosboxt = dosbox.conf.template,dosboxt = /dos/dosbox-telnetbbs-template.conf,'  \
     /dos/TelnetBBS-master/telnetbbs.conf
+
+# Set up the DOSBox modem.
+sed -i 's/serial1=dummy/serial1=modem listenport:5000/' /dos/dosbox.conf
 
 # Don't start DosBOX by default.
 rm /etc/supervisor/conf.d/dosbox.conf
