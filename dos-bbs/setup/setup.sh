@@ -72,6 +72,7 @@ sed -e 's/serial1=dummy/serial1=modem listenport:__LISTEN_PORT__/' \
 sed -i -e 's/port = 3023/port = 23/' \
     -e 's/base_port = 3024/base_port = 7001/' \
     -e 's/display = :0.0/display = :1/' \
+    -e 's/bbs_name = My BBS/bbs_name = the BBS/' \
     -e 's,dosboxt = dosbox.conf.template,dosboxt = /dos/dosbox-telnetbbs-template.conf,'  \
     /dos/TelnetBBS-master/telnetbbs.conf
 
