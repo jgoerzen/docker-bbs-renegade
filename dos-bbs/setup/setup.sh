@@ -18,9 +18,21 @@ cd /dos/drive_d
 mkdir comm
 cd comm
 unzip /tmp/setup/tm421.zip
-mv tm421 tm
-cd tm
+mv tm421 TM
+cd TM
 sed -i 's/Baud=38400/Baud=57600/' TM.CFG
+
+# Set up Telix
+cd /dos/drive_d/comm
+mkdir TELIX
+mkdir telix_extract
+cd telix_extract
+unzip /tmp/setup/telix351.zip
+cd ../TELIX
+unzip ../telix_extract/TELIX351.DAT
+rm -r /dos/drive_d/comm/telix_extract
+mv -vi /tmp/setup/TELIX.* /dos/drive_d/comm/TELIX/
+
 
 # Download doors
 cd /dos/drive_d
