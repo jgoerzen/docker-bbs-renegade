@@ -50,3 +50,6 @@ sed -i -e 's/port = 3023/port = 23/' \
     -e 's,dosboxt = dosbox.conf.template,dosboxt = /dos/dosbox-telnetbbs-template.conf,'  \
     /dos/TelnetBBS-master/telnetbbs.conf
 
+# Don't start DosBOX by default.
+rm /etc/supervisor/conf.d/dosbox.conf
+
