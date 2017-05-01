@@ -15,3 +15,9 @@ echo 'path %PATH%;Y:\DOS' >> /dos/dosbox.conf
 
 # Fix an issue with the VNC console
 sed -i 's/usescancodes=true/usescancodes=false/' /dos/dosbox.conf
+
+# Convenience aliases
+cd /usr/local/bin
+ln -s /usr/bin/vim.tiny vim
+ln -s /usr/bin/vim.tiny vi
+
