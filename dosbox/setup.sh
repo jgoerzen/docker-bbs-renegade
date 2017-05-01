@@ -3,14 +3,14 @@
 set -e
 set -x
 
-mkdir -p /dos/drive_{c,d,y}
+mkdir -p /dos/drive_{c,d,e,f,g,y}
 cp -r /usr/lib/dosemu/drive_z/bin/* /dos/drive_y
 
 DOSBOXCONF="`dosbox -printconf`"
 mv "$DOSBOXCONF" /dos/dosbox.conf
-echo "mount c /dos/drive_c" >> /dos/dosbox.conf
-echo "mount d /dos/drive_d" >> /dos/dosbox.conf
-echo "mount y /dos/drive_y" >> /dos/dosbox.conf
+for ASDF in c d e f g y; do 
+  echo "mount $ASDF /dos/drive_$ASDF" >> /dos/dosbox.conf
+done
 echo 'path %PATH%;Y:\' >> /dos/dosbox.conf
 
 # Fix an issue with the VNC console

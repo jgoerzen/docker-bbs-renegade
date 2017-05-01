@@ -3,10 +3,8 @@
 set -e
 set -x
 
-cd /tmp/setup
-wget https://ftp.sunet.se/mirror/archive/ftp.sunet.se/pub/simtelnet/msdos/fossil/adf_150.zip
-
-sha256sum -c < sums
+cd /dos
+unzip /tmp/setup/master.zip
 
 cd /dos/drive_d
 mkdir adf
