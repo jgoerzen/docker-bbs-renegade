@@ -1,0 +1,6 @@
+http://dosbox.bbsdev.net/
+https://github.com/Geryon/TelnetBBS
+http://www.instructables.com/id/Renegade-BBS-in-Ubuntu-Linux-Telnet-Multi-Node/
+http://www.redditmirror.cc/cache/websites/geek.phatus.com_9stap/geek.phatus.com/2009/08/renegade-bbs-in-ubuntu-linux-telnetmulti-node/index.html
+http://www.bbsing.com/bbsfossil/bbsfossil.html
+
