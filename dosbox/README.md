@@ -19,3 +19,7 @@ logged in the docker logs.
 This is prepared by John Goerzen <jgoerzen@complete.org> and the source
 can be found at https://github.com/jgoerzen/docker-bbs/tree/master/dosbox
 
+You can install with:
+
+docker pull jgoerzen/dosbox
+
