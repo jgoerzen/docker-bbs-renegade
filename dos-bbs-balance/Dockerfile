@@ -8,7 +8,6 @@ RUN apt-get update && \
 #    apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 COPY setup/ /tmp/setup/
-RUN /tmp/setup/download.sh
 
 COPY supervisor/ /etc/supervisor/conf.d/
 RUN /tmp/setup/setup.sh && rm -r /tmp/setup
