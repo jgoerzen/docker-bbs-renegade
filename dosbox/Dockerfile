@@ -5,7 +5,7 @@ RUN sed -i 's/main/main contrib/g' /etc/apt/sources.list && \
     apt-get update && \
     apt-get -y -u dist-upgrade && \
     apt-get -y --no-install-recommends install dosbox tightvncserver xfonts-base \
-            lwm xterm vim-tiny less wget ca-certificates \
+            lwm xterm vim-tiny less wget ca-certificates balance \
             supervisor dosemu zip unzip pwgen xdotool telnet mtools nano && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 COPY startvnc /usr/local/bin
