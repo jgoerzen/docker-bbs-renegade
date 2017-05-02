@@ -2,7 +2,7 @@
 
 set -e
 
-MAXNODE=${BBSNODES:-2}
+MAXNODE=${BBSNODES:-1}
 
 if [ "$1" -gt "$MAXNODE" ]; then
   exec sleep 900d  # OK, so it's not forever, but close enough.

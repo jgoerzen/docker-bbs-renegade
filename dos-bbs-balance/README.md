@@ -9,7 +9,7 @@ runs persistent nodes with a simple load balancer to start them.
 Please see dos-bbs for the primary documentation.
 
 An additional environment variable, BBSNODES, can be set to indicate how many nodes to
-start.  It defaults to 2.
+start.  It defaults to 1.
 
 # Source
 
