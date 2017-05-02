@@ -11,4 +11,7 @@ set -x
 # Set up the DOSBox modem.
 sed -i 's/serial1=dummy/serial1=modem listenport:5000/' /dos/dosbox.conf
 
+# We don't want to run this.
+rm /etc/supervisor/conf.d/telnetbbs.conf
+
 
