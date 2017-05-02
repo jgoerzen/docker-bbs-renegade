@@ -6,11 +6,11 @@ MAXNODE=${BBSNODES:-2}
 
 CMDLINE=""
 
-for NODE in seq 1 $MAXNODE; do
+for NODE in `seq 1 $MAXNODE`; do
   NODEPORT=$(($NODE + 7000))
   CMDLINE="$CMDLINE 127.0.0.1:$NODEPORT:1"
 done
 
 set -x
-exec balance -f 23 $CMDLINE
+exec balance -d -f 23 $CMDLINE
 
