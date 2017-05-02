@@ -5,7 +5,7 @@ This image runs a telnettable Renegade BBS server inside Docker.
 It is based upon:
 
  - [My DOSBox environment for Docker](https://github.com/jgoerzen/docker-bbs/tree/master/dosbox)
- - [My general BBS template](https://github.com/jgoerzen/docker-bbs/tree/master/dos-bbs)
+ - [My general BBS template](https://github.com/jgoerzen/docker-bbs/tree/master/dos-bbs) and the dos-bbs-balance
  - [Multi-node telnet BBS setup](https://github.com/Geryon/TelnetBBS)
  - [The Renegade BBS](http://renegadebbs.info)
 
@@ -40,9 +40,10 @@ Now, inside DOSBox:
     c:
     cd rg
     share
-    renegade -N1
+    renegade -N3  (or whatever; don't mimic what's already running!)
 
-You can then configure the system as needed.
+You can then configure the system as needed.  Note: this is pretty much
+the same as you'd see from the auto-started node.
 
 # More Information
 
