@@ -11,6 +11,7 @@ COPY setup/ /tmp/setup/
 
 COPY supervisor/ /etc/supervisor/conf.d/
 RUN /tmp/setup/setup.sh && rm -r /tmp/setup
+COPY scripts/ /usr/local/bin/
 
 EXPOSE 5901 23
 CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf"]
