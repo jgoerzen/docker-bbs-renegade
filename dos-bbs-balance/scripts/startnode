@@ -16,7 +16,7 @@ echo "Starting up node $NODE on port $NODEPORT"
 CONFIGFILE="/tmp/dosbox-node$NODE.conf"
 
 sed -e "s/__LISTEN_PORT__/$NODEPORT/" \
-    -e "s/__NODE__/$NODE/" \ 
+    -e "s/__NODE__/$NODE/" \
   < /dos/dosbox-telnetbbs-template.conf > "$CONFIGFILE"
 
 exec dosbox -conf "$CONFIGFILE"
