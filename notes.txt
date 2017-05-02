@@ -1,0 +1,3 @@
+NETFOSS info: http://pcmicro.com/netfoss/guide/
+DOSBOX builds: http://ykhwong.x-y.net/
+
