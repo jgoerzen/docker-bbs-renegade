@@ -1,4 +1,4 @@
-FROM jgoerzen/dos-bbs
+FROM jgoerzen/dos-bbs-balance
 
 MAINTAINER John Goerzen <jgoerzen@complete.org>
 
