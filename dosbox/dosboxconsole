@@ -1,5 +1,0 @@
-#!/bin/bash
-
-export DISPLAY=:1
-exec /usr/bin/dosbox -conf /dos/dosbox.conf
-
