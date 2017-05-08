@@ -21,6 +21,10 @@ And run with:
 
     docker run -d -p 5901:5901 -p 23:23 --name bbs-renegade jgoerzen/bbs-renegade
 
+# Accessing and general commands
+
+For details, see the [dos-bbs generic info](https://github.com/jgoerzen/docker-dos-bbs).
+
 # Installed Files
 
 This image is built upon the extensive [collection in jgoerzen/dos-bbs](https://github.com/jgoerzen/docker-dos-bbs).
