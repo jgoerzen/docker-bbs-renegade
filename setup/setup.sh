@@ -3,8 +3,15 @@
 set -e
 set -x
 
+# Download
+cd /tmp/setup
+wget http://renegadebbs.info/files/unofficial.rgbbsfullv120a.zip
+
+sha256sum -c < sums
+
 cd /dos/drive_g
 unzip /tmp/setup/unofficial.rgbbsfullv120a.zip
+rm /tmp/setup/unofficial.rgbbsfullv120a.zip
 cd rg/DATA
 
 # set up all 9 nodes.
@@ -25,4 +32,5 @@ echo "CD RG" >> addtoboot
 echo "renegade.exe /N__NODE__" >> addtoboot
 
 echo 2 > /dos/numnodes   # 2 nodes by default
+
 
