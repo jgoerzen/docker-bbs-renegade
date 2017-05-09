@@ -18,7 +18,7 @@ cd rg/DATA
 for ASDF in 2 3 4 5 6 7 8 9; do
   cp NODE1.DAT NODE$ASDF.DAT
 done
-cp /tmp/setup/MULTNODE.DAT .
+mv /tmp/setup/MULTNODE.DAT .
 
 cd /dos/drive_g/rg
 
@@ -26,10 +26,6 @@ cd /dos/drive_g/rg
 find . -type f -exec sed -i 's,C:\\RG,G:\\RG,g' {} \;
 
 cd /dos
-
-echo "G:" >> addtoboot
-echo "CD RG" >> addtoboot
-echo "renegade.exe /N__NODE__" >> addtoboot
 
 echo 2 > /dos/numnodes   # 2 nodes by default
 
