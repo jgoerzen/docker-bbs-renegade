@@ -2,7 +2,7 @@
 
 This image runs a telnettable Renegade BBS server inside Docker.
 
-![Renegade image][https://raw.githubusercontent.com/jgoerzen/docker-bbs-renegade/master/renegade-login.png]
+![Renegade image](https://raw.githubusercontent.com/jgoerzen/docker-bbs-renegade/master/renegade-login.png)
 
 It is based upon:
 
