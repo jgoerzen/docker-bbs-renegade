@@ -4,12 +4,11 @@ This image runs a telnettable Renegade BBS server inside Docker.
 
 It is based upon:
 
- - [My QEMU environment for Docker](https://github.com/jgoerzen/docker-qemu)
- - [My DOS under QEMU environment for Docker](https://github.com/jgoerzen/docker-qemu-dos)
+ - [My DOSEMU environment for Docker](https://github.com/jgoerzen/docker-dosemu)
  - [My general BBS template, jgoerzen/dos-bbs](https://github.com/jgoerzen/docker-dos-bbs) and the dos-bbs-balance
  - [The Renegade BBS](http://renegadebbs.info)
 
-This provides the full v1.20 setup in Drive C:.
+This provides the full v1.20 setup in Drive G:.
 
 # Install and Run
 
@@ -40,11 +39,16 @@ The jgoerzen/dos-bbs will describe this.  Please refer to it.
 
 The node basically does this to start up a Renegade instance:
 
+    h:
+    cd ADF
+    lh adf COM1 3F8  4 115200 8192  8192  8   (load the FOSSIL driver)
     g:
     cd rg
-    renegade -N3  (or whatever; don't mimic what's already running!)
+    renegade -N3 -Q -B115200   (where 3 is the node number)
 
-The console comes without the shared drive support in order to give it enough RAM to run Telemate.
+You can start up the DOS console with `dosconsole`.  To access the Renegade
+config system, run the above commands, except at the end, omit the `-Q -B115200`.
+
 You can connect to the local BBS with ATDTlocalhost.
 
 # More Information
