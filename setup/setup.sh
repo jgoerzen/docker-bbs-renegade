@@ -5,7 +5,9 @@ set -x
 
 # Download
 cd /tmp/setup
-wget http://renegadebbs.info/files/unofficial.rgbbsfullv120a.zip
+# renegadebbs.info wend down in July 2017.  Use the archive.org copy.
+# wget http://renegadebbs.info/files/unofficial.rgbbsfullv120a.zip
+wget 'https://web.archive.org/web/20160324195446/http://renegadebbs.info/files/unofficial.rgbbsfullv120a.zip'
 
 sha256sum -c < sums
 
